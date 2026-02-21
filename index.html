@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theoretiker-Kompendium – Staatsexamen Medienpädagogik</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#F7F5F0;color:#2C2C2C;min-height:100vh;padding:24px;line-height:1.5}
+h1{font-family:'Source Serif 4',Georgia,serif;font-size:28px;font-weight:700;color:#1A1A1A}
+.subtitle{font-family:'IBM Plex Mono',monospace;font-size:12px;color:#888;margin-top:4px;letter-spacing:.5px;text-transform:uppercase}
+.header{margin-bottom:24px;border-bottom:2px solid #E0DCD4;padding-bottom:16px}
+.tabs{display:flex;gap:0;margin-bottom:20px}
+.tab-btn{padding:10px 22px;border:2px solid #D0CBC0;background:#fff;color:#777;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:1px;transition:all .2s;font-weight:500}
+.tab-btn:hover{color:#333;border-color:#aaa;background:#FAFAF7}
+.tab-btn.active{color:#1A1A1A;border-color:#8B6914;background:#FFF9EB;font-weight:600}
+.tab-btn:first-child{border-radius:6px 0 0 6px}.tab-btn:last-child{border-radius:0 6px 6px 0}
+.filters{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.filter-btn{padding:6px 14px;border:1.5px solid #D0CBC0;background:#fff;color:#666;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:11px;border-radius:20px;transition:all .2s;font-weight:500}
+.filter-btn:hover{color:#333;border-color:#999;background:#FAFAF7}
+.filter-btn.af{border-color:#8B6914;color:#8B6914;background:#FFF9EB;font-weight:600}
+.vp{display:none}.vp.active{display:block}
+table{width:100%;border-collapse:collapse;font-size:13px;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+thead tr{background:#F0EDE6;border-bottom:2px solid #8B6914}
+th{padding:12px 10px;text-align:left;font-family:'IBM Plex Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#666;font-weight:600}
+.tr{border-bottom:1px solid #EDE9E0;transition:background .15s;cursor:pointer}
+.tr:hover{background:#FFF9EB}.tr.sel{background:#FFF3D6;border-left:4px solid #8B6914}
+td{padding:10px;vertical-align:top}
+.tn{font-weight:700;white-space:nowrap;font-size:13px}
+.tl{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#666;white-space:nowrap}
+.to{font-size:10px;color:#999}.tt{color:#333;max-width:150px}.tk{color:#555;font-size:12px;max-width:180px}
+.tf{color:#8B6914;font-size:12px;max-width:190px;font-style:italic}.tm{color:#1A6B3C;font-size:12px;max-width:210px;font-weight:500}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:middle}
+.dc{margin-top:24px;background:#fff;border-radius:10px;padding:20px 24px;animation:si .3s ease;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+@keyframes si{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.dh{display:flex;justify-content:space-between;align-items:flex-start}
+.dn{font-family:'Source Serif 4',serif;font-size:22px;font-weight:700;margin-bottom:2px}
+.dm{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#888}
+.cb{background:#F0EDE6;border:1.5px solid #D0CBC0;color:#777;cursor:pointer;padding:5px 12px;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:500}
+.cb:hover{color:#333;border-color:#999;background:#E8E4DB}
+.dg{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:16px}
+.dl{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#999;font-family:'IBM Plex Mono',monospace;margin-bottom:4px;margin-top:14px;font-weight:600}
+.dl:first-child{margin-top:0}
+.dt{color:#333;font-size:14px;line-height:1.5}.dfn{color:#8B6914;font-size:14px;font-style:italic;line-height:1.5}
+.dmd{color:#1A6B3C;font-size:14px;font-weight:600;line-height:1.5}
+.dcn{color:#555;font-size:12px;margin-bottom:4px;cursor:pointer;line-height:1.6}
+.dcn:hover{color:#1A1A1A}.ca{color:#8B6914;font-weight:700}.cnm{color:#1A1A1A;font-weight:600}
+.sc{background:#fff;border-radius:10px;padding:16px;box-shadow:0 1px 4px rgba(0,0,0,.06);overflow-x:auto}
+.lf{margin-top:24px;padding-top:14px;border-top:2px solid #E0DCD4;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#888;display:flex;gap:28px;flex-wrap:wrap}
+.lf .g{color:#8B6914;font-weight:600}
+::-webkit-scrollbar{height:8px;width:8px}::-webkit-scrollbar-track{background:#F0EDE6;border-radius:4px}::-webkit-scrollbar-thumb{background:#C8C2B6;border-radius:4px}
+</style>
+</head>
+<body>
+<div class="header"><h1>Theoretiker-Kompendium</h1><div class="subtitle">Staatsexamen Medienpädagogik · 21 Personen · Lerntheorien · Verbindungen</div></div>
+<div class="tabs">
+<button class="tab-btn active" onclick="sv('timeline')">⏤ Timeline</button>
+<button class="tab-btn" onclick="sv('cluster')">◎ Cluster</button>
+<button class="tab-btn" onclick="sv('table')">≡ Tabelle</button>
+</div>
+<div id="fc" class="filters" style="display:none"></div>
+<div id="v-timeline" class="vp active"></div>
+<div id="v-cluster" class="vp"></div>
+<div id="v-table" class="vp"></div>
+<div id="det"></div>
+<div class="lf">
+<span>▬ durchgezogen = direkte Beeinflussung</span>
+<span>╌ gestrichelt = Gegenbewegung</span>
+<span>··· gepunktet = thematische Verbindung</span>
+<span class="g">● Klick auf Person für Details</span>
+</div>
+<script>
+const T=[
+{id:"rousseau",name:"Jean-Jacques Rousseau",b:1712,d:1778,o:"Genf / Frankreich",c:"#9E7B20",th:"Natürliche Erziehung, negative Pädagogik",k:"Émile, Naturzustand, Gesellschaftsvertrag, Selbstbildung",f:"Schrieb DAS Erziehungsbuch – gab eigene 5 Kinder ins Waisenhaus",s:"Fundament für Reformpädagogik, Aufklärung, Menschenrechte",m:"Urvater explorativer Lernumgebungen: Erfahrungsräume statt Belehrung → entdeckendes digitales Lernen",cl:"philosophy"},
+{id:"dewey",name:"John Dewey",b:1859,d:1952,o:"USA",c:"#A08928",th:"Pragmatismus, Erfahrungslernen",k:"Learning by Doing, Demokratie & Erziehung, Reflexion, bildende Erfahrung",f:"Kerres zitiert ihn als Gegenpol zum Paradigmenstreit – war schon vor dem Behaviorismus weiter",s:"Bildung als aktive Erfahrung – Erziehung zur Demokratie",m:"Kerres' Pragmatismus-Position basiert direkt auf Dewey: Lerntheorien ergänzen sich",cl:"philosophy"},
+{id:"montessori",name:"Maria Montessori",b:1870,d:1952,o:"Italien",c:"#8E7A1E",th:"Selbsttätigkeit, vorbereitete Umgebung",k:"Hilf mir es selbst zu tun, Freiarbeit, sensible Phasen",f:"Erste Ärztin Italiens – wurde Pädagogin, weil sie kranke Kinder anders behandeln wollte",s:"Reformpädagogik: Kind als Baumeister seiner selbst",m:"Kerres: Selbststeuerung entsteht nicht durch Wegfall von Fremdsteuerung, sondern durch Unterstützung",cl:"philosophy"},
+{id:"piaget",name:"Jean Piaget",b:1896,d:1980,o:"Schweiz",c:"#1B7A3D",th:"Kognitive Entwicklungstheorie",k:"Assimilation, Akkommodation, Schemata, 4 Stufen",f:"Erste wissenschaftliche Publikation mit 11 (Albino-Sperling)",s:"Kind als aktiver Denker – revolutionierte Entwicklungspsychologie",m:"Konstruktivistisches Fundament: interaktive, problemorientierte digitale Lernaufgaben",cl:"cognitive"},
+{id:"vygotsky",name:"Lev Vygotsky",b:1896,d:1934,o:"Sowjetunion",c:"#B82020",th:"Soziokulturalismus, ZPD",k:"Zone der nächsten Entwicklung, Scaffolding, Sprache als Werkzeug",f:"Diktierte Hauptwerk auf dem Sterbebett – wurde nur 37",s:"Lernen ist immer sozial eingebettet",m:"Examens-Goldstandard! ZPD → adaptive Lernpfade, Scaffolding → gestufte Hilfen, CSCL",cl:"cognitive"},
+{id:"erikson",name:"Erik H. Erikson",b:1902,d:1994,o:"DE → USA",c:"#7B4D8A",th:"Psychosoziale Entwicklung (8 Stufen)",k:"Identität vs. Rollendiffusion, Urvertrauen, Entwicklungsaufgaben",f:"Kein Hochschulabschluss – kam über Kunstlehrer zu Anna Freud",s:"Persönlichkeitsentwicklung im gesellschaftlichen Kontext",m:"Identitätsfindung Jugendlicher → Social Media als Identitätswerkstatt & Risikoraum",cl:"developmental"},
+{id:"skinner",name:"B.F. Skinner",b:1904,d:1990,o:"USA (Harvard)",c:"#2D6A9F",th:"Operante Konditionierung, Behaviorismus",k:"Verstärkung, Löschung, Programmierte Instruktion",f:"Baute Tochter Glasbettchen – Presse machte Skandal draus",s:"Begründer des empirischen Behaviorismus",m:"Vorläufer adaptiver Lernsoftware, Gamification, Learning Analytics (Kerres)",cl:"behavioral"},
+{id:"bloom",name:"Benjamin Bloom",b:1913,d:1999,o:"USA (Chicago)",c:"#3D7F8A",th:"Taxonomie der Lernziele, Mastery Learning",k:"Wissen → Verstehen → Anwenden → Analysieren → Bewerten",f:"Taxonomie 2001 revidiert – Original kennt trotzdem jeder",s:"Grundlage aller Anforderungsbereiche (AFB I–III)",m:"Basis für Aufgabendesign: Lernziele in digitalen Umgebungen operationalisieren",cl:"behavioral"},
+{id:"bruner",name:"Jerome Bruner",b:1915,d:2016,o:"USA (Harvard/Oxford)",c:"#B05A1A",th:"Entdeckendes Lernen, EIS-Prinzip",k:"Enaktiv / Ikonisch / Symbolisch, Spiralcurriculum",f:"Wurde 100 Jahre alt, publizierte noch mit über 90",s:"Kognitive Wende – brach mit dem Behaviorismus",m:"EIS = Blaupause für CTML (Mayer), Spiralcurriculum, Entdeckendes Lernen → Simulationen",cl:"cognitive"},
+{id:"gagne",name:"Robert Gagné",b:1916,d:2002,o:"USA",c:"#4A7080",th:"9 Events of Instruction",k:"Aufmerksamkeit → Ziel → Vorwissen → Inhalt → Übung → Feedback → Transfer",f:"Militärpsychologe – entwickelte Theorie für Pilotenausbildung",s:"Urgestein des Instructional Design",m:"Blaupause für strukturierte E-Learning-Module (Kerres)",cl:"behavioral"},
+{id:"bandura",name:"Albert Bandura",b:1925,d:2021,o:"Kanada → Stanford",c:"#D06A00",th:"Sozial-kognitive Lerntheorie",k:"Modelllernen, Selbstwirksamkeit, Bobo-Doll",f:"4.-meistzitiertester Psychologe des 20. Jh.",s:"Lernen durch Beobachtung – Brücke Behaviorismus ↔ Kognitivismus",m:"S-O-R bei Medienwirkung, Influencer als Modelle, Selbstwirksamkeit als Designziel",cl:"behavioral"},
+{id:"baacke",name:"Dieter Baacke",b:1934,d:1999,o:"DE (Bielefeld)",c:"#C42B2B",th:"Medienkompetenz-Modell (4 Dimensionen)",k:"Medienkritik, Medienkunde, Mediennutzung, Mediengestaltung",f:"DER Referenzpunkt dt. Medienpädagogik – obwohl nie ganz ausformuliert",s:"Prägte den deutschen Medienkompetenz-Diskurs",m:"Standardreferenz: 4 Dimensionen als Zielhorizont für Unterrichtsentwürfe",cl:"medienpaed"},
+{id:"spinner",name:"Kaspar H. Spinner",b:1941,d:null,o:"Schweiz / DE",c:"#A84870",th:"11 Aspekte literarischen Lernens",k:"Imagination, Perspektivübernahme, ästhetische Wahrnehmung",f:"Deutschdidaktiker – taucht trotzdem in MedPäd-Examina auf",s:"Systematisierte literarisches Lernen",m:"Narrative Medienkompetenz, Perspektivübernahme bei Games/Film",cl:"didactics"},
+{id:"tulodziecki",name:"Gerhard Tulodziecki",b:1941,d:null,o:"DE (Paderborn)",c:"#C44545",th:"Handlungsorientierte Medienpädagogik",k:"5 Aufgabenbereiche, Medienanalyse, Bedingungen",f:"Einer der wenigen, die Medienerziehung UND Mediendidaktik zusammendenken",s:"Medienkompetenz mit schulischen Handlungsfeldern verknüpft",m:"5 Aufgabenbereiche als Strukturierungshilfe, komplementär zu Baacke",cl:"medienpaed"},
+{id:"zimmerman",name:"Barry Zimmerman",b:1942,d:2014,o:"USA (CUNY)",c:"#D05830",th:"Selbstregulationsmodell des Lernens",k:"3 Phasen: Vorausplanung → Handlung → Selbstreflexion",f:"Bandura war sein Doktorvater – machte Selbstwirksamkeit zum Prozessmodell",s:"Selbstregulation als lernbare, zyklische Kompetenz",m:"Selbstreguliertes Lernen in LMS: Planungstools, Lerntagebücher, Reflexionsprompts",cl:"motivation"},
+{id:"deci_ryan",name:"Deci & Ryan",b:1942,d:null,o:"USA (Rochester)",c:"#7B2DB5",th:"Selbstbestimmungstheorie (SDT)",k:"Autonomie, Kompetenz, Eingebundenheit, Korrumpierungseffekt",f:"Soma-Puzzle: Bezahlung senkte die Lust am Puzzeln",s:"Intrinsische Motivation hängt von Grundbedürfnissen ab",m:"Motivationsdesign: Wahlfreiheit, gestufte Aufgaben, kollaborative Settings",cl:"motivation"},
+{id:"sweller",name:"John Sweller",b:1946,d:null,o:"Australien",c:"#0E8A7F",th:"Cognitive Load Theory (CLT)",k:"Intrinsic / Extraneous / Germane Load, Worked Example Effect",f:"Worked-Example-Effekt per Zufall entdeckt – Anschauen schlug Selbstlösen",s:"Arbeitsgedächtnis als Flaschenhals – schlechtes Design behindert Lernen",m:"Fundament für Multimedia-Design: Extraneous Load minimieren → Mayer",cl:"cognitive_modern"},
+{id:"mayer",name:"Richard Mayer",b:1947,d:null,o:"USA (Santa Barbara)",c:"#0A8A9A",th:"CTML – Multimedia Learning",k:"12+ Prinzipien: Modalität, Redundanz, Kohärenz, Signaling",f:"Mehr Multimedia-Prinzipien als mancher Rezepte kennt – alle empirisch belegt",s:"Spielregeln für effektives multimediales Lernen",m:"DER Referenzrahmen für E-Learning: Text + Bild + Audio ohne Overload",cl:"cognitive_modern"},
+{id:"bonfadelli",name:"Heinz Bonfadelli",b:1949,d:null,o:"Schweiz (Zürich)",c:"#9040CC",th:"Medienwirkungsforschung, Wissenskluft",k:"S-O-R, Uses-and-Gratification, Knowledge Gap, Agenda Setting",f:"DAS deutschsprachige Standardwerk zur Medienwirkungsforschung",s:"Systematisierte Medienwirkungsforschung für den dt. Raum",m:"Medienwirkung im Examen: S-O-R, Konsistenztheorien, Wissenskluft",cl:"medienpaed"},
+{id:"hattie",name:"John Hattie",b:1950,d:null,o:"NZ / Australien",c:"#5050CC",th:"Visible Learning, Meta-Meta-Analysen",k:"Effektstärken d > 0.4, Feedback, Lehrer als Aktivator",f:"800+ Metaanalysen, 80+ Mio. Schüler – größte Bildungsstudie ever",s:"Bildungsforschung quantifizierbar gemacht",m:"Feedback als stärkster Hebel, Lehrer bleibt zentral, Effektstärken als Argument",cl:"cognitive_modern"},
+{id:"kerres",name:"Michael Kerres",b:1960,d:null,o:"DE (Duisburg-Essen)",c:"#D03030",th:"Mediendidaktische Konzeption",k:"Gestaltungsorientierung, Pragmatismus, Technikdeterminismus-Kritik",f:"Sein Lehrbuch ist die Bibel für Mediendidaktik im Staatsexamen Bayern",s:"Verknüpft Lerntheorien mit Mediengestaltung",m:"Kerres IST Mediendidaktik: Gestaltungsorientierung, Pragmatismus, Synthese",cl:"medienpaed"},
+{id:"petko",name:"Dominik Petko",b:1972,d:null,o:"Schweiz (Zürich)",c:"#D05555",th:"Einführung in die Mediendidaktik",k:"Medien als Werkzeuge, kognitive Werkzeugtheorie, TPACK",f:"Kompakter als Kerres – beliebt als Einstieg und Zweitquelle",s:"Brücke zwischen Theorie und Schulpraxis",m:"Pragmatische Ergänzung zu Kerres: Medien als kognitive Werkzeuge",cl:"medienpaed"},
+];
+const CN=[
+{f:"rousseau",t:"piaget",l:"beeinflusste direkt",s:"solid"},{f:"rousseau",t:"dewey",l:"Erfahrung & Selbsttätigkeit",s:"solid"},
+{f:"rousseau",t:"montessori",l:"natürliche Erziehung",s:"solid"},{f:"dewey",t:"bruner",l:"Pragmatismus → Entdecken",s:"solid"},
+{f:"dewey",t:"kerres",l:"Pragmatismus-Position",s:"solid"},{f:"piaget",t:"vygotsky",l:"Zeitgenossen, Gegenpole",s:"dashed"},
+{f:"piaget",t:"bruner",l:"kognitive Wende",s:"solid"},{f:"vygotsky",t:"bruner",l:"soziales → entdeckendes Lernen",s:"dotted"},
+{f:"vygotsky",t:"deci_ryan",l:"soziale Eingebundenheit",s:"dotted"},{f:"skinner",t:"bandura",l:"Erweiterung: Beobachtung",s:"solid"},
+{f:"skinner",t:"bruner",l:"Gegenbewegung: kogn. Wende",s:"dashed"},{f:"skinner",t:"bloom",l:"Mastery Learning",s:"dotted"},
+{f:"bandura",t:"zimmerman",l:"Doktorvater → Selbstregulation",s:"solid"},{f:"bandura",t:"deci_ryan",l:"Selbstwirksamkeit → SDT",s:"solid"},
+{f:"bandura",t:"bonfadelli",l:"Modelllernen → Medienwirkung",s:"dotted"},{f:"erikson",t:"deci_ryan",l:"Entwicklung → Motivation",s:"dotted"},
+{f:"bloom",t:"hattie",l:"Lernziele → Effektstärken",s:"dotted"},{f:"sweller",t:"mayer",l:"CLT → CTML",s:"solid"},
+{f:"bruner",t:"mayer",l:"EIS → Multimedia",s:"solid"},{f:"baacke",t:"tulodziecki",l:"Kompetenz → Handlungsfelder",s:"solid"},
+{f:"tulodziecki",t:"kerres",l:"Medienerz. ↔ Mediendidaktik",s:"dashed"},{f:"kerres",t:"petko",l:"Lehrbuch-Komplementarität",s:"dotted"},
+{f:"mayer",t:"kerres",l:"CTML → Gestaltung",s:"solid"},{f:"hattie",t:"kerres",l:"Feedback → Lerndesign",s:"dotted"},
+{f:"zimmerman",t:"deci_ryan",l:"Selbstreg. ↔ Selbstbestimmung",s:"dotted"},{f:"spinner",t:"bruner",l:"narrative Sinngebung",s:"dotted"},
+{f:"montessori",t:"kerres",l:"Selbststeuerung",s:"dotted"},{f:"gagne",t:"kerres",l:"Instructional Design",s:"solid"},
+{f:"gagne",t:"bloom",l:"Lernhierarchie ↔ Taxonomie",s:"dotted"},
+];
+const CL={
+philosophy:{l:"Philosophie & Reformpädagogik",c:"#9E7B20",bg:"#FFF8E0"},
+cognitive:{l:"Kognitivismus / Konstruktivismus",c:"#1B7A3D",bg:"#E8F5EC"},
+developmental:{l:"Entwicklungspsychologie",c:"#7B4D8A",bg:"#F3E8F7"},
+behavioral:{l:"Behaviorismus → Sozial-kognitiv",c:"#2D6A9F",bg:"#E4F0FA"},
+motivation:{l:"Motivation & Selbstregulation",c:"#7B2DB5",bg:"#F0E4FA"},
+cognitive_modern:{l:"Kognitive Lernforschung (modern)",c:"#0E8A7F",bg:"#E0F5F3"},
+medienpaed:{l:"Medienpädagogik & -didaktik",c:"#C42B2B",bg:"#FDE8E8"},
+didactics:{l:"Fachdidaktik",c:"#A84870",bg:"#FAE8F0"},
+};
+const CP={
+rousseau:{x:.07,y:.18},dewey:{x:.07,y:.40},montessori:{x:.07,y:.62},
+piaget:{x:.25,y:.11},vygotsky:{x:.25,y:.33},bruner:{x:.25,y:.55},
+skinner:{x:.44,y:.09},bloom:{x:.44,y:.28},gagne:{x:.44,y:.47},bandura:{x:.44,y:.68},
+erikson:{x:.62,y:.07},deci_ryan:{x:.62,y:.26},zimmerman:{x:.62,y:.45},
+sweller:{x:.50,y:.86},mayer:{x:.36,y:.90},hattie:{x:.64,y:.86},
+baacke:{x:.82,y:.09},tulodziecki:{x:.82,y:.26},kerres:{x:.82,y:.44},
+petko:{x:.82,y:.62},bonfadelli:{x:.82,y:.80},spinner:{x:.25,y:.78},
+};
+let sel=null,cv='timeline',cf='all';
+function sv(v){cv=v;document.querySelectorAll('.tab-btn').forEach((b,i)=>b.classList.toggle('active',['timeline','cluster','table'][i]===v));document.querySelectorAll('.vp').forEach(p=>p.classList.remove('active'));document.getElementById('v-'+v).classList.add('active');document.getElementById('fc').style.display=v==='table'?'flex':'none';R()}
+function sl(id){sel=sel===id?null:id;R()}
+function sf(f){cf=cf===f?'all':f;R()}
+function gd(s){return s==='solid'?'none':s==='dashed'?'8,4':'3,3'}
+function R(){rT();rC();rTb();rF();rD()}
+
+function rF(){const c=document.getElementById('fc');let h=`<button class="filter-btn ${cf==='all'?'af':''}" onclick="sf('all')">Alle</button>`;for(const[k,v]of Object.entries(CL)){const a=cf===k;h+=`<button class="filter-btn ${a?'af':''}" style="${a?'border-color:'+v.c+';color:'+v.c:''}" onclick="sf('${k}')">${v.l}</button>`}c.innerHTML=h}
+
+function rT(){
+const so=[...T].sort((a,b)=>a.b-b.b),W=960,rH=30,p=115,H=so.length*rH+70;
+let g=`<div class="sc"><svg width="${W}" height="${H}">`;
+[1700,1750,1800,1850,1900,1950,2000,2025].forEach(y=>{const x=p+((y-1700)/325)*(W-p-20);g+=`<line x1="${x}" y1="10" x2="${x}" y2="${H-40}" stroke="#E8E4DB"/><text x="${x}" y="${H-18}" fill="#999" font-size="11" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="500">${y}</text>`});
+[{s:1700,e:1800,l:"Aufklärung",c:"#FFF8E0"},{s:1890,e:1940,l:"Frühe Moderne",c:"#E8F5EC"},{s:1900,e:1960,l:"Behaviorismus-Ära",c:"#E4F0FA"},{s:1950,e:2025,l:"Kogn. Wende & danach",c:"#F0E4FA"}].forEach(e=>{const x1=p+((e.s-1700)/325)*(W-p-20),x2=p+((e.e-1700)/325)*(W-p-20);g+=`<rect x="${x1}" y="10" width="${x2-x1}" height="${H-55}" fill="${e.c}" rx="4" opacity=".5"/><text x="${x1+6}" y="26" fill="#999" font-size="10" font-family="IBM Plex Mono,monospace" font-weight="500">${e.l}</text>`});
+so.forEach((t,i)=>{const bx=p+((t.b-1700)/325)*(W-p-20),dx=p+(((t.d||2025)-1700)/325)*(W-p-20),y=36+i*rH,iS=sel===t.id,fl=iS?t.c:t.c+'BB',st=iS?` stroke="${t.c}" stroke-width="2.5"`:'',sn=t.name.includes('&')?t.name:t.name.split(' ').pop(),fw=iS?700:500,fc=iS?'#1A1A1A':'#555';g+=`<g onclick="sl('${t.id}')" style="cursor:pointer"><rect x="${bx}" y="${y}" width="${Math.max(dx-bx,4)}" height="20" fill="${fl}"${st} rx="4"/><text x="${bx-6}" y="${y+14}" fill="${fc}" font-size="12" text-anchor="end" font-weight="${fw}" font-family="Inter,sans-serif">${sn}</text><text x="${bx+5}" y="${y+14}" fill="#fff" font-size="9" font-family="IBM Plex Mono,monospace" font-weight="600">${t.b}–${t.d||'…'}</text></g>`});
+g+=`</svg></div>`;document.getElementById('v-timeline').innerHTML=g}
+
+function rC(){
+const W=960,H=680;let g=`<div class="sc"><svg width="${W}" height="${H}"><rect width="${W}" height="${H}" fill="#FAFAF7"/>`;
+const cm={};T.forEach(t=>{if(!cm[t.cl])cm[t.cl]=[];cm[t.cl].push(t)});
+for(const[k,ms]of Object.entries(cm)){const inf=CL[k],ps=ms.map(m=>CP[m.id]).filter(Boolean);if(!ps.length)continue;const xs=ps.map(p=>p.x*W),ys=ps.map(p=>p.y*H),cx=xs.reduce((a,b)=>a+b,0)/xs.length,cy=ys.reduce((a,b)=>a+b,0)/ys.length;let r=55;ps.forEach(p=>{const d=Math.sqrt((p.x*W-cx)**2+(p.y*H-cy)**2)+50;if(d>r)r=d});g+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="${inf.bg}" stroke="${inf.c}33" stroke-width="1.5" stroke-dasharray="6,4"/><text x="${cx}" y="${cy-r+14}" fill="${inf.c}" font-size="9" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="600" opacity=".7">${inf.l}</text>`}
+CN.forEach(cn=>{const p1=CP[cn.f],p2=CP[cn.t];if(!p1||!p2)return;const x1=p1.x*W,y1=p1.y*H,x2=p2.x*W,y2=p2.y*H,mx=(x1+x2)/2,my=(y1+y2)/2,hl=sel&&(cn.f===sel||cn.t===sel);g+=`<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${hl?'#8B6914':'#bbb'}" stroke-width="${hl?2:1}" stroke-dasharray="${gd(cn.s)}" opacity="${sel&&!hl?.08:hl?1:.5}"/>`;if(hl)g+=`<rect x="${mx-64}" y="${my-10}" width="128" height="20" rx="5" fill="#fff" stroke="#E0DCD4"/><text x="${mx}" y="${my+4}" fill="#8B6914" font-size="9" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="600">${cn.l}</text>`});
+T.forEach(t=>{const p=CP[t.id];if(!p)return;const x=p.x*W,y=p.y*H,iS=sel===t.id,iC=sel&&CN.some(c=>(c.f===sel&&c.t===t.id)||(c.t===sel&&c.f===t.id)),dm=sel&&!iS&&!iC,r=iS?27:22,sn=t.name.includes('&')?'D&R':t.name.split(' ').pop().substring(0,7);g+=`<g onclick="sl('${t.id}')" style="cursor:pointer" opacity="${dm?.18:1}">`;if(iS)g+=`<circle cx="${x}" cy="${y}" r="${r+5}" fill="none" stroke="${t.c}44" stroke-width="2.5"/>`;g+=`<circle cx="${x}" cy="${y}" r="${r}" fill="${t.c}" stroke="#fff" stroke-width="2.5"/><text x="${x}" y="${y}" fill="#fff" font-size="11" text-anchor="middle" font-weight="700" font-family="Inter,sans-serif" dominant-baseline="central">${sn}</text><text x="${x}" y="${y+14}" fill="#ffffffcc" font-size="9" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="500">${t.b}</text></g>`});
+g+=`<g transform="translate(14,${H-26})">${[['none','direkte Beeinflussung'],['8,4','Gegenbewegung'],['3,3','thematische Verbindung']].map(([d,l],i)=>`<g transform="translate(${i*240},0)"><line x1="0" y1="6" x2="28" y2="6" stroke="#888" stroke-width="2" stroke-dasharray="${d}"/><text x="34" y="10" fill="#777" font-size="10" font-family="IBM Plex Mono,monospace" font-weight="500">${l}</text></g>`).join('')}</g></svg></div>`;
+document.getElementById('v-cluster').innerHTML=g}
+
+function rTb(){
+const ft=cf==='all'?T:T.filter(t=>t.cl===cf),so=[...ft].sort((a,b)=>a.b-b.b);
+let h='<div style="overflow-x:auto"><table><thead><tr>';
+['Person','Leben','Kerntheorie','Schlüsselbegriffe','Fun Fact','Mediendid. Bezug'].forEach(c=>h+=`<th>${c}</th>`);
+h+='</tr></thead><tbody>';
+so.forEach(t=>{h+=`<tr class="tr ${sel===t.id?'sel':''}" onclick="sl('${t.id}')"><td class="tn" style="color:${t.c}"><span class="dot" style="background:${t.c}"></span>${t.name}</td><td class="tl">${t.b}–${t.d||'…'}<br><span class="to">${t.o}</span></td><td class="tt">${t.th}</td><td class="tk">${t.k}</td><td class="tf">${t.f}</td><td class="tm">${t.m}</td></tr>`});
+h+='</tbody></table></div>';document.getElementById('v-table').innerHTML=h}
+
+function rD(){
+const c=document.getElementById('det');if(!sel){c.innerHTML='';return}
+const t=T.find(x=>x.id===sel);if(!t){c.innerHTML='';return}
+const cl=CL[t.cl],cns=CN.filter(cn=>cn.f===t.id||cn.t===t.id);
+let ch='';cns.forEach(cn=>{const oi=cn.f===t.id?cn.t:cn.f,ot=T.find(x=>x.id===oi);if(!ot)return;ch+=`<div class="dcn" onclick="event.stopPropagation();sl('${oi}')"><span class="ca">→</span> <span class="cnm">${ot.name}</span>: ${cn.l}</div>`});
+c.innerHTML=`<div class="dc" style="border-left:5px solid ${t.c}"><div class="dh"><div><div class="dn" style="color:${t.c}">${t.name}</div><div class="dm">${t.b}–${t.d||'heute'} · ${t.o} · ${cl?cl.l:''}</div></div><button class="cb" onclick="sl(null)">✕ Schließen</button></div><div class="dg"><div><div class="dl">Kerntheorie</div><div class="dt">${t.th}</div><div class="dl">Schlüsselbegriffe</div><div class="dt" style="color:#555">${t.k}</div><div class="dl">Fun Fact</div><div class="dfn">${t.f}</div></div><div><div class="dl">Bedeutung</div><div class="dt">${t.s}</div><div class="dl">Mediendidaktischer Bezug</div><div class="dmd">${t.m}</div><div class="dl">Verbindungen</div>${ch||'<div style="color:#999;font-size:12px">Keine direkten Verbindungen</div>'}</div></div></div>`}
+R();
+</script>
+</body>
+</html>
